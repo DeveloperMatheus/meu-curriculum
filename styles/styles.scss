@@ -12,16 +12,17 @@ body {
   list-style: none;
   border: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: $secondary;
 }
 
 /* ===== Body Page ===== */
 .container {
   max-width: 1220px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
+  background-color: $white;
 }
 
 .container__card-curriculum {
-  border-radius: 8px;
   border: 3px solid $gray;
   overflow: hidden;
 }

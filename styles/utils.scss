@@ -1,5 +1,4 @@
 /* ===== Utils ===== */
-
 .full-width {
   width: 100%;
 }
@@ -7,4 +6,21 @@
 /* ===== Borders ===== */
 .border-white {
   border: 2px solid $primary;
+}
+
+/* ===== Text Align ===== */
+$center: center;
+$left: left;
+$right: right;
+
+$text-align-map: (
+  $center: center,
+  $left: left,
+  $right: right,
+);
+
+@each $name, $text-align in $text-align-map {
+  .text-#{$name} {
+    text-align: $text-align;
+  }
 }

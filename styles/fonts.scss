@@ -1,0 +1,20 @@
+/* ===== Fonts ===== */
+$xs: 14px;
+$sm: 18px;
+$default: 24px;
+$xl: 32px;
+$xxl: 48px;
+
+$font-map: (
+  "xs": $xs,
+  "sm": $sm,
+  "default": $default,
+  "xl": $xl,
+  "xxl": $xxl,
+);
+
+@each $name, $font in $font-map {
+  .font-#{$name} {
+    font-size: $font;
+  }
+}

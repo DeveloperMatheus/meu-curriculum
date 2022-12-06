@@ -101,6 +101,40 @@
   border: 2px solid #ff9900;
 }
 
+/* ===== Text Align ===== */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ===== Fonts ===== */
+.font-xs {
+  font-size: 14px;
+}
+
+.font-sm {
+  font-size: 18px;
+}
+
+.font-default {
+  font-size: 24px;
+}
+
+.font-xl {
+  font-size: 32px;
+}
+
+.font-xxl {
+  font-size: 48px;
+}
+
 /* ===== CSS Reset ===== */
 body {
   padding: 0;

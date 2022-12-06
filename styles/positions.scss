@@ -1,0 +1,26 @@
+/* ===== Display ===== */
+$display-map: (
+  "flex": "flex",
+  "block": "block",
+  "none": "none",
+);
+
+@each $name, $display in $display-map {
+  .#{$name} {
+    display: $display;
+  }
+}
+
+/* ===== Position ===== */
+
+$position-map: (
+  "none": none,
+  "relative": relative,
+  "absolute": absolute,
+);
+
+@each $name, $position in $position-map {
+  .pos-#{$name} {
+    position: $position;
+  }
+}

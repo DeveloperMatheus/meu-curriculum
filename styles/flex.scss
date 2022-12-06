@@ -1,0 +1,25 @@
+/* ===== Align-Items ===== */
+$align-map: (
+  "align-start": "flex-start",
+  "align-center": "center",
+  "align-end": "flex-end",
+);
+
+@each $name, $flex in $align-map {
+  .#{$name} {
+    align-items: $flex;
+  }
+}
+
+/* ===== Justify-Content ===== */
+$justify-map: (
+  "justify-start": "flex-start",
+  "justify-center": "center",
+  "justify-end": "flex-end",
+);
+
+@each $name, $flex in $justify-map {
+  .#{$name} {
+    justify-content: $flex;
+  }
+}

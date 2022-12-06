@@ -1,3 +1,8 @@
+@import "./colors.scss";
+@import "./positions.scss";
+@import "./flex.scss";
+@import "./utils.scss";
+
 /* ===== CSS Reset ===== */
 body {
   padding: 0;
@@ -5,117 +10,28 @@ body {
   vertical-align: baseline;
   list-style: none;
   border: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-$primary: #ff9900;
-$secondary: #6f00ff;
-$danger: #a00000;
-$gray: #bebebe;
-$white: #fff;
-
-// Colors
-$color-map: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "danger": $danger,
-  "gray": $gray,
-  "white": $white,
-);
-
-@each $name, $color in $color-map {
-  .bg-#{$name} {
-    background-color: $color;
-  }
-  .text-#{$name} {
-    color: $color;
-  }
-}
-
-/* ===== Display ===== */
-$display-map: (
-  "flex": "flex",
-  "block": "block",
-  "none": "none",
-);
-
-@each $name, $display in $display-map {
-  .#{$name} {
-    display: $display;
-  }
-}
-
-/* ===== Position ===== */
-
-$position-map: (
-  "none": none,
-  "relative": relative,
-  "absolute": absolute,
-);
-
-@each $name, $position in $position-map {
-  .pos-#{$name} {
-    position: $position;
-  }
-}
-
-/* ===== Align-Items ===== */
-$align-map: (
-  "align-start": "flex-start",
-  "align-center": "center",
-  "align-end": "flex-end",
-);
-
-@each $name, $flex in $align-map {
-  .#{$name} {
-    align-items: $flex;
-  }
-}
-
-/* ===== Justify-Content ===== */
-$justify-map: (
-  "justify-start": "flex-start",
-  "justify-center": "center",
-  "justify-end": "flex-end",
-);
-
-@each $name, $flex in $justify-map {
-  .#{$name} {
-    justify-content: $flex;
-  }
-}
-
-/* ===== Borders ===== */
-
-.border-white {
-  border: 2px solid map-get($color-map, 1);
-}
-
-/* ===== General ===== */
-
-.full-width {
-  width: 100%;
-}
-
+/* ===== Body Page ===== */
 .container {
   max-width: 1220px;
   margin: 0 auto;
 }
 
-/* ===== Body Page ===== */
-
-.card-curriculum {
+.container__card-curriculum {
   border-radius: 8px;
   border: 3px solid $gray;
   overflow: hidden;
 }
 
-.cover-box {
+.card-curriculum__cover-box {
   height: 250px;
   background: url(../assets/svg/coverBg.svg) transparent no-repeat bottom center /
     cover;
 }
 
-.profile-box {
+.card-curriculum__profile-box {
   width: 200px;
   height: 200px;
   border-radius: 50%;

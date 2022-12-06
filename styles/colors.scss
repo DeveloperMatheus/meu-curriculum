@@ -1,0 +1,23 @@
+/* ===== Colors ===== */
+$primary: #ff9900;
+$secondary: #6f00ff;
+$danger: #a00000;
+$gray: #bebebe;
+$white: #fff;
+
+$color-map: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "gray": $gray,
+  "white": $white,
+);
+
+@each $name, $color in $color-map {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}

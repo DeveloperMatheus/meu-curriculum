@@ -1,12 +1,4 @@
-/* ===== CSS Reset ===== */
-body {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
-}
-
+/* ===== Colors ===== */
 .bg-primary {
   background-color: #ff9900;
 }
@@ -99,34 +91,44 @@ body {
   justify-content: "flex-end";
 }
 
-/* ===== Borders ===== */
-.border-white {
-  border: 2px solid;
-}
-
-/* ===== General ===== */
+/* ===== Utils ===== */
 .full-width {
   width: 100%;
 }
 
+/* ===== Borders ===== */
+.border-white {
+  border: 2px solid #ff9900;
+}
+
+/* ===== CSS Reset ===== */
+body {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ===== Body Page ===== */
 .container {
   max-width: 1220px;
   margin: 0 auto;
 }
 
-/* ===== Body Page ===== */
-.card-curriculum {
+.container__card-curriculum {
   border-radius: 8px;
   border: 3px solid #bebebe;
   overflow: hidden;
 }
 
-.cover-box {
+.card-curriculum__cover-box {
   height: 250px;
   background: url(../assets/svg/coverBg.svg) transparent no-repeat bottom center/cover;
 }
 
-.profile-box {
+.card-curriculum__profile-box {
   width: 200px;
   height: 200px;
   border-radius: 50%;

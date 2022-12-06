@@ -1,0 +1,138 @@
+/* ===== CSS Reset ===== */
+body {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+.bg-primary {
+  background-color: #ff9900;
+}
+
+.text-primary {
+  color: #ff9900;
+}
+
+.bg-secondary {
+  background-color: #6f00ff;
+}
+
+.text-secondary {
+  color: #6f00ff;
+}
+
+.bg-danger {
+  background-color: #a00000;
+}
+
+.text-danger {
+  color: #a00000;
+}
+
+.bg-gray {
+  background-color: #bebebe;
+}
+
+.text-gray {
+  color: #bebebe;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* ===== Display ===== */
+.flex {
+  display: "flex";
+}
+
+.block {
+  display: "block";
+}
+
+.none {
+  display: "none";
+}
+
+/* ===== Position ===== */
+.pos-none {
+  position: none;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+/* ===== Align-Items ===== */
+.align-start {
+  align-items: "flex-start";
+}
+
+.align-center {
+  align-items: "center";
+}
+
+.align-end {
+  align-items: "flex-end";
+}
+
+/* ===== Justify-Content ===== */
+.justify-start {
+  justify-content: "flex-start";
+}
+
+.justify-center {
+  justify-content: "center";
+}
+
+.justify-end {
+  justify-content: "flex-end";
+}
+
+/* ===== Borders ===== */
+.border-white {
+  border: 2px solid;
+}
+
+/* ===== General ===== */
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* ===== Body Page ===== */
+.card-curriculum {
+  border-radius: 8px;
+  border: 3px solid #bebebe;
+  overflow: hidden;
+}
+
+.cover-box {
+  height: 250px;
+  background: url(../assets/svg/coverBg.svg) transparent no-repeat bottom center/cover;
+}
+
+.profile-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: url(../assets/img/avatar.jpg) #fff no-repeat center center/cover;
+  margin: -100px auto 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

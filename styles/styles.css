@@ -23,12 +23,20 @@
   color: #a00000;
 }
 
-.bg-gray {
+.bg-grey {
   background-color: #bebebe;
 }
 
-.text-gray {
+.text-grey {
   color: #bebebe;
+}
+
+.bg-light-grey {
+  background-color: #d3d3d3;
+}
+
+.text-light-grey {
+  color: #d3d3d3;
 }
 
 .bg-white {
@@ -39,17 +47,25 @@
   color: #fff;
 }
 
+.bg-black {
+  background-color: #000;
+}
+
+.text-black {
+  color: #000;
+}
+
 /* ===== Display ===== */
 .flex {
-  display: "flex";
+  display: flex;
 }
 
 .block {
-  display: "block";
+  display: block;
 }
 
 .none {
-  display: "none";
+  display: none;
 }
 
 /* ===== Position ===== */
@@ -67,28 +83,36 @@
 
 /* ===== Align-Items ===== */
 .align-start {
-  align-items: "flex-start";
+  align-items: flex-start;
 }
 
 .align-center {
-  align-items: "center";
+  align-items: center;
 }
 
 .align-end {
-  align-items: "flex-end";
+  align-items: flex-end;
 }
 
 /* ===== Justify-Content ===== */
 .justify-start {
-  justify-content: "flex-start";
+  justify-content: flex-start;
 }
 
 .justify-center {
-  justify-content: "center";
+  justify-content: center;
 }
 
 .justify-end {
-  justify-content: "flex-end";
+  justify-content: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 /* ===== Utils ===== */
@@ -105,6 +129,10 @@
   border: 2px solid #ff9900;
 }
 
+.border-down-grey {
+  border-bottom: 2px solid #6f00ff;
+}
+
 /* ===== Text Align ===== */
 .text-center {
   text-align: center;
@@ -119,16 +147,20 @@
 }
 
 /* ===== Fonts ===== */
-.font-xs {
+.font-xxs {
   font-size: 14px;
 }
 
-.font-sm {
+.font-xs {
   font-size: 18px;
 }
 
-.font-default {
+.font-sm {
   font-size: 24px;
+}
+
+.font-default {
+  font-size: 28px;
 }
 
 .font-xl {
@@ -157,7 +189,7 @@ body {
   background-color: #fff;
 }
 
-.container__card-curriculum {
+.card-curriculum {
   border: 3px solid #bebebe;
   overflow: hidden;
 }
@@ -174,6 +206,30 @@ body {
   border: 3px solid #fff;
   background: url(../assets/img/avatar.jpg) #fff no-repeat center center/cover;
   margin: -100px auto 0 auto;
+}
+
+.tab-curriculum__header-button {
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 8px 8px 0 0;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.tab-curriculum__header-button:hover {
+  border-top: 2px solid #6f00ff;
+  border-left: 2px solid #6f00ff;
+  border-right: 2px solid #6f00ff;
+}
+.tab-curriculum__header-button .tab-curriculum__header-button__button-image {
+  width: 50px;
+  height: auto;
+  margin-right: 3px;
+}
+
+.tab-curriculum__item {
+  padding: 15px;
+  width: 600px;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

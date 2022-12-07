@@ -1,8 +1,8 @@
 /* ===== Align-Items ===== */
 $align-map: (
-  "align-start": "flex-start",
-  "align-center": "center",
-  "align-end": "flex-end",
+  "align-start": flex-start,
+  "align-center": center,
+  "align-end": flex-end,
 );
 
 @each $name, $flex in $align-map {
@@ -13,13 +13,21 @@ $align-map: (
 
 /* ===== Justify-Content ===== */
 $justify-map: (
-  "justify-start": "flex-start",
-  "justify-center": "center",
-  "justify-end": "flex-end",
+  "justify-start": flex-start,
+  "justify-center": center,
+  "justify-end": flex-end,
 );
 
 @each $name, $flex in $justify-map {
   .#{$name} {
     justify-content: $flex;
   }
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
 }

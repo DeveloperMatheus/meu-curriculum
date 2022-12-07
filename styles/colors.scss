@@ -2,15 +2,19 @@
 $primary: #ff9900;
 $secondary: #6f00ff;
 $danger: #a00000;
-$gray: #bebebe;
+$grey: #bebebe;
+$lightgrey: #d3d3d3;
 $white: #fff;
+$black: #000;
 
 $color-map: (
   "primary": $primary,
   "secondary": $secondary,
   "danger": $danger,
-  "gray": $gray,
+  "grey": $grey,
+  "light-grey": $lightgrey,
   "white": $white,
+  "black": $black,
 );
 
 @each $name, $color in $color-map {

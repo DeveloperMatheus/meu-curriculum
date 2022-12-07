@@ -1,11 +1,13 @@
 /* ===== Fonts ===== */
-$xs: 14px;
-$sm: 18px;
-$default: 24px;
+$xxs: 14px;
+$xs: 18px;
+$sm: 24px;
+$default: 28px;
 $xl: 32px;
 $xxl: 48px;
 
 $font-map: (
+  "xxs": $xxs,
   "xs": $xs,
   "sm": $sm,
   "default": $default,

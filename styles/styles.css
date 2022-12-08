@@ -173,13 +173,18 @@
 
 /* ===== CSS Reset ===== */
 body {
+  background-color: #6f00ff;
+}
+
+body,
+p,
+h2 {
   padding: 0;
   margin: 0;
   vertical-align: baseline;
   list-style: none;
   border: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #6f00ff;
 }
 
 /* ===== Body Page ===== */
@@ -191,7 +196,6 @@ body {
 
 .card-curriculum {
   border: 3px solid #bebebe;
-  overflow: hidden;
 }
 
 .card-curriculum__cover-box {
@@ -226,10 +230,26 @@ body {
   margin-right: 3px;
 }
 
+.tab-curriculum__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .tab-curriculum__item {
   padding: 15px;
-  width: 600px;
+  margin: 15px;
+}
+.tab-curriculum__item .tab-curriculum__item-description {
   margin-top: 15px;
+}
+
+@media screen and (max-width: 420px) {
+  .tab-curriculum__header-button {
+    font-size: 18px;
+  }
+  .tab-curriculum__header-button .tab-curriculum__header-button__button-image {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

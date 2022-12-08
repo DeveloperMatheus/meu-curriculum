@@ -1,8 +1,8 @@
 /* ===== Display ===== */
 $display-map: (
   "flex": flex,
-  "block": block,
-  "none": none,
+  "d-block": block,
+  "d-none": none,
 );
 
 @each $name, $display in $display-map {

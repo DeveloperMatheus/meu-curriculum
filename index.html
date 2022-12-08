@@ -56,6 +56,7 @@
             class="tab-curriculum__header border-down-grey flex flex-row align-end justify-center"
           >
             <button
+              onclick="tabHandler('exp')"
               class="tab-curriculum__header-button flex flex-row align-center justify-center font-default bg-white"
             >
               <img
@@ -66,6 +67,7 @@
               Experience
             </button>
             <button
+              onclick="tabHandler('tools')"
               class="tab-curriculum__header-button flex flex-row align-center justify-center font-default bg-white"
             >
               <img
@@ -78,7 +80,7 @@
           </div>
 
           <div
-            class="body__wrapper flex flex-column align-center justify-center"
+            class="tab-curriculum__mode body__wrapper flex flex-column align-center justify-center"
           >
             <div class="tab-curriculum__body">
               <div class="tab-curriculum__item bg-light-grey radius-8">
@@ -153,8 +155,14 @@
               </div>
             </div>
           </div>
+          <div
+            class="tab-curriculum__mode body__wrapper flex flex-column align-center justify-center"
+          >
+            <p>Teste 2</p>
+          </div>
         </div>
       </div>
     </main>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

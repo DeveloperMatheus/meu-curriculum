@@ -60,11 +60,11 @@
   display: flex;
 }
 
-.block {
+.d-block {
   display: block;
 }
 
-.none {
+.d-none {
   display: none;
 }
 
@@ -245,6 +245,10 @@ h2 {
   width: 50px;
   height: auto;
   margin-right: 3px;
+}
+
+.tab-curriculum__header-button--selected {
+  background-color: red;
 }
 
 .tab-curriculum__item {

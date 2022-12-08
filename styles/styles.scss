@@ -27,9 +27,13 @@ h2 {
   background-color: $white;
 }
 
+.body__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .card-curriculum {
   border: 3px solid $grey;
-  // overflow: auto;
 }
 
 .card-curriculum__cover-box {
@@ -46,6 +50,13 @@ h2 {
   background: url(../assets/img/avatar.jpg) $white no-repeat center center /
     cover;
   margin: -100px auto 0 auto;
+}
+
+.card-curriculum__profile-infos {
+  padding: 15px;
+  .card-curriculum__profile-infos-title {
+    line-height: 42px;
+  }
 }
 
 // Tab
@@ -66,11 +77,6 @@ h2 {
     height: auto;
     margin-right: 3px;
   }
-}
-
-.tab-curriculum__wrapper {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .tab-curriculum__item {
